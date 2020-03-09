@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>页眉</title>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<style>
+    body {
+        color: #666;
+    }
+    .title {
+        width: 240px;
+        height: 40px;
+        background: url('../img/title.png') 0 0 no-repeat;
+        border-bottom: 2px solid #2875bb;
+    }
+    .title_ {
+        height: 40px;
+        line-height: 40px;
+        font-size: 16px;
+        border-bottom: 4px solid #2875bb;
+    }
+    .line {
+        height: 4px;
+        border-bottom: 1px solid #2875bb;
+    }
+    .erCode {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+    }
+</style>
+<body>
+    <div class="title"></div>
+    <div class="title_">
+        <span>新三板市场日报--</span>
+        <span id="time"></span>
+    </div>
+    <div class="line"></div>
+
+    <img class="erCode" src="../img/erCode.png" alt="">
+<script >
+    var time = '',
+        date = new Date();
+    var year = date.getFullYear(),
+        month = date.getMonth() +1,
+        day = date.getDate();
+    $('#time').html(year + '年' + month + '月' + day + '日')
+</script>
+</body>
+</html>
