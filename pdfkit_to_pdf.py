@@ -135,6 +135,7 @@ options = {
     # 'disable-smart-shrinking': None, #禁止只能缩放页面大小
     # 'custom-header': [ #为url添加统一的请求header
     #     ('Accept-Encoding', 'gzip')
+    #     ('Connection', 'keep-alive')
     # ],
 }
 
