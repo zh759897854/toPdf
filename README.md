@@ -1,6 +1,6 @@
 #### PythonToPDF-Python转pdf工具
 
-### 其实原理是利用静态html生成pdf 所以缺陷就是一些动态记载的文件，或者第三方的展示无法生成
+### 其实原理是利用静态html生成pdf 所以缺陷就是一些动态加载的文件，或者第三方的展示无法生成
 
 ### -------------------------------------------------
 
@@ -142,7 +142,5 @@
   为了更精细地控制页面大小，可以使用--page-height和--page-width选项
   ```
 
-
-### pip install fake_useragent 失败多尝试几次
 
 [wkhtmltopdf下载](https://wkhtmltopdf.org/downloads.html)
